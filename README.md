@@ -1,4 +1,4 @@
-# Customizing Your App's Navigation Bar
+# Customizing your app's navigation bar
 
 Create custom titles, prompts, and buttons in your app’s navigation bar.
 
@@ -12,7 +12,7 @@ The project walks you through a set of examples that customize  the look and beh
 
 The sample demonstrates different ways to modify the navigation bar directly using the appearance proxy, and indirectly by modifying the view controller's [`UINavigationItem`](https://developer.apple.com/documentation/uikit/uinavigationitem). The levels of customization include varying bar styles and applying custom left and right buttons known as [`UIBarButtonItems`](https://developer.apple.com/documentation/uikit/uibarbuttonitem).
 
-## Change the Bar Style
+## Change the bar style
 
 The sample demonstrates changing the bar style to match the overall appearance of an app's design.
 
@@ -25,11 +25,10 @@ self.navigationController!.navigationBar.barStyle = .black
 self.navigationController!.navigationBar.isTranslucent = false
 self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
 ```
-[View in Source](x-source-tag://BarStyleExample)
 
-- Note: A navigation controller determines its [`preferredStatusBarStyle`](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621416-preferredstatusbarstyle) based on the navigation bar style. As a result, the status bar matches the bar style, without any extra code required.
+- Note: A navigation controller determines its [`preferredStatusBarStyle`](https://developer.apple.com/documentation/uikit/uiviewcontroller/preferredstatusbarstyle) based on the navigation bar style. As a result, the status bar matches the bar style, without any extra code required.
 
-## Customize the Right View
+## Customize the right view
 
 The right side of the navigation bar options for customization include applying a custom `UIView` or using a `UIBarButtonItem`.
 
@@ -41,9 +40,8 @@ This sample shows how to set a segmented control as the right bar button item:
 let segmentBarItem = UIBarButtonItem(customView: segmentedControl)
 navigationItem.rightBarButtonItem = segmentBarItem
 ```
-[View in Source](x-source-tag://CustomRightViewExample)
 
-## Customize the Title View
+## Customize the title view
 
 Another option is configuring the navigation bar to use a `UIView` as the title, using `UISegmentedControl` as the center custom title view.
 
@@ -52,22 +50,20 @@ This sample shows how to set a segmented control as the title view:
 ``` swift
 self.navigationItem.titleView = segmentedControl
 ```
-[View in Source](x-source-tag://CustomTitleViewExample)
 
-## Modify the Navigation Prompt
+## Modify the navigation prompt
 
 The navigation bar can also include a prompt or single line of text at the top.
 
-The sample demonstrates how to use the [`prompt`](https://developer.apple.com/documentation/uikit/uinavigationitem/1624930-prompt) property of a `UINavigationItem` to display a custom line of text above the navigation bar.
+The sample demonstrates how to use the [`prompt`](https://developer.apple.com/documentation/uikit/uinavigationitem/prompt) property of a `UINavigationItem` to display a custom line of text above the navigation bar.
 
 Here's how to set the navigation item's prompt:
 
 ``` swift
 navigationItem.prompt = NSLocalizedString("Navigation prompts appear at the top.", comment: "")
 ```
-[View in Source](x-source-tag://PromptExample)
 
-## Customize the Navigation Bar Appearance
+## Customize the navigation bar appearance
 
 Apply a custom background to a `UINavigationBar` by adding a bar tint color or background image.
 
@@ -90,13 +86,12 @@ if #available(iOS 15.0, *) { // For compatibility with earlier iOS.
     navBar.compactScrollEdgeAppearance = compactAppearance
 }
 ```
-[View in Source](x-source-tag://BackgroundImageExample)
 
-## Customize Back Button Titles
+## Customize back button titles
 
 Users can quickly switch between different stack levels with a tap and hold on the back button. The sample shows this by pushing ten view controllers on the current navigation stack to demonstrate that back button titles can be customized for each view controller level in the stack.
 
-## Customize the Back Button with an Image
+## Customize the back button with an image
 
 It's also possible to use an image as the back button without any back button text and without the back arrow that normally appears next to the back button. The sample sets the back button UINavigationBar appearance like this:
 
@@ -113,7 +108,6 @@ let barButtonAppearance =
     UIBarButtonItem.appearance(whenContainedInInstancesOf: [CustomBackButtonNavController.self])
 barButtonAppearance.setBackButtonTitlePositionAdjustment(UIOffset(horizontal: 0, vertical: -5), for: .default)
 ```
-[View in Source](x-source-tag://BackImageButtonExample)
 
 Then, it removes the back button text:
 
@@ -122,7 +116,7 @@ let backBarButton = UIBarButtonItem(title: "", style: .plain, target: nil, actio
 navigationItem.backBarButtonItem = backBarButton
 ```
 
-## Modify the Large Title in the Navigation Bar
+## Modify the large title in the navigation bar
 
 Another option for customizing the navigation bar includes setting its title at a larger size, thus increasing the size of the `UINavigationBar`. For more information, refer to the `LargeTitleViewController` source file in this sample.
 
@@ -131,7 +125,6 @@ The code below shows how the sample sets the background image of a navigation ba
 ``` swift
 self.navigationController?.navigationBar.prefersLargeTitles = true
 ```
-[View in Source](x-source-tag://LargeTitleExample)
 
 ## Change Navigation Bar Appearance
 
@@ -159,9 +152,8 @@ doneButtonAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.sys
 navigationItem.standardAppearance?.doneButtonAppearance = doneButtonAppearance
 navigationItem.compactAppearance?.doneButtonAppearance = doneButtonAppearance // For iPhone small navigation bar in landscape.
 ```
- [View in Source](x-source-tag://AppearanceExample)
  
-## Attach a Menu to a Bar Button Item
+## Attach a menu to a bar button item
 
 A menu attachment provides extended and easy access to application features in one place. The sample attaches a [`UIMenu`](https://developer.apple.com/documentation/uikit/uimenu) to the right side `UIBarButtonItem` control:
 
@@ -174,4 +166,4 @@ let barButtonMenu = UIMenu(title: "", children: [
 ])
 optionsBarItem.menu = barButtonMenu
 ```
- [View in Source](x-source-tag://MenuExample)
+
