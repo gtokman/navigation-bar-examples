@@ -15,6 +15,9 @@ Localized strings.
 /* CustomRightViewController */
 "AddTitle" = "Add";
 
+/* DefaultButtonGroupingViewController */
+"Select" = "Select";
+
 /* CustomTitleViewController */
 "Image" = "Image";
 "Text" = "Text";

@@ -2,18 +2,13 @@
 See the LICENSE.txt file for this sample’s licensing information.
 
 Abstract:
-Demonstrates configuring the navigation bar to use a UIView as the title.
+Demonstrates configuring the navigation bar to use a custom view as the title.
 */
 
 import UIKit
 
 class CustomTitleViewController: UIViewController {
     
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return .portrait
-    }
-    
-    /// - Tag: CustomTitleViewExample
     override func viewDidLoad() {
         super.viewDidLoad()
         

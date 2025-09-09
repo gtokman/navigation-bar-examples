@@ -2,7 +2,7 @@
 See the LICENSE.txt file for this sample’s licensing information.
 
 Abstract:
-Demonstrates using a custom back button image (no back arrow and text).
+Demonstrates using a custom back button image with no back arrow and text.
 */
 
 import UIKit
@@ -17,10 +17,5 @@ class CustomBackButtonViewController: UITableViewController {
         
         dataSource = CitiesDataSource()
         tableView.dataSource = dataSource
-
-        // Provide an empty backBarButton to hide the 'Back' text present by default in the back button.
-        let backBarButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        navigationItem.backBarButtonItem = backBarButton
     }
-
 }

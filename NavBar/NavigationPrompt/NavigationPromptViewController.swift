@@ -9,11 +9,6 @@ import UIKit
 
 class NavigationPromptViewController: UIViewController {
     
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return .portrait
-    }
-    
-/// - Tag: PromptExample
     override func viewDidLoad() {
         super.viewDidLoad()
 

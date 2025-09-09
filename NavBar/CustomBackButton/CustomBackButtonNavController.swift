@@ -2,7 +2,7 @@
 See the LICENSE.txt file for this sample’s licensing information.
 
 Abstract:
-UINavigationController subclass used for targeting appearance proxy changes in the Custom Back Button example.
+Navigation controller subclass used for the Custom Back Button example.
 */
 
 import UIKit

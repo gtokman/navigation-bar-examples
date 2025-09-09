@@ -15,16 +15,11 @@ class CustomRightViewController: UIViewController {
         static let controlButton = 2
     }
     
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return .portrait
-    }
-    
-    /// IBAction for the segemented control.
-    /// - Tag: CustomRightViewExample
+    /// IBAction for the segmented control.
     @IBAction func changeRightBarItem(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case SegmentedControl.textButton:
-            // Add a custom add button as the nav bar's custom right view.
+            // Add a custom add button as the navigation bar's custom right view.
             let addButton = UIBarButtonItem(title: NSLocalizedString("AddTitle", comment: ""),
                                             style: .plain,
                                             target: self,
@@ -32,7 +27,7 @@ class CustomRightViewController: UIViewController {
             navigationItem.rightBarButtonItem = addButton
             
         case SegmentedControl.imageButton:
-            // Add the custom image button as the nav bar's custom right view.
+            // Add the custom image button as the navigation bar's custom right view.
             let emailButton = UIBarButtonItem(image: UIImage(systemName: "envelope")!,
                                               style: .plain,
                                               target: self,
