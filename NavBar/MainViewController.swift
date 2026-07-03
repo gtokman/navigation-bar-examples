@@ -17,7 +17,7 @@ class MainViewController: UITableViewController, UIActionSheetDelegate {
     // MARK: - Table view methods
 	    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 8 {
+        if indexPath.row == 9 {
             // User tapped the "Custom Back Button Titles" row that doesn't use a segue.
             
             /** Users can quickly switch between different stack levels with a tap and hold on the back button. The sample shows this

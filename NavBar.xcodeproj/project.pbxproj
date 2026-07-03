@@ -30,6 +30,7 @@
 		D8EEB0212E4FFA87001FE910 /* CustomButtonColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEB0202E4FFA87001FE910 /* CustomButtonColorsViewController.swift */; };
 		D8EEB0242E4FFF52001FE910 /* CustomToolbarLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEB0232E4FFF52001FE910 /* CustomToolbarLayoutViewController.swift */; };
 		D8EEB0272E500818001FE910 /* TitleSubtitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEB0262E500818001FE910 /* TitleSubtitleViewController.swift */; };
+		7A0000022F4A0001000A1111 /* SheetFromBarButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000012F4A0001000A1111 /* SheetFromBarButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		D8EEB0202E4FFA87001FE910 /* CustomButtonColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomButtonColorsViewController.swift; path = NavBar/CustomButtonColors/CustomButtonColorsViewController.swift; sourceTree = "<group>"; };
 		D8EEB0232E4FFF52001FE910 /* CustomToolbarLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomToolbarLayoutViewController.swift; path = NavBar/CustomToolbarLayout/CustomToolbarLayoutViewController.swift; sourceTree = "<group>"; };
 		D8EEB0262E500818001FE910 /* TitleSubtitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TitleSubtitleViewController.swift; path = NavBar/TitleSubtitle/TitleSubtitleViewController.swift; sourceTree = "<group>"; };
+		7A0000012F4A0001000A1111 /* SheetFromBarButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SheetFromBarButtonViewController.swift; path = NavBar/SheetFromBarButton/SheetFromBarButtonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				53578E051FA1012100E32463 /* LargeTitle */,
 				D8EEB0252E5007AF001FE910 /* TitleSubtitle */,
 				53FC6C9924C128AC004FA35A /* BarButtonMenu */,
+				7A0000032F4A0001000A1111 /* SheetFromBarButton */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -204,6 +207,14 @@
 				D827512E2E57D787000D4FEB /* ToolbarSystemSearchViewController.swift */,
 			);
 			name = ToolbarSystemSearch;
+			sourceTree = "<group>";
+		};
+		7A0000032F4A0001000A1111 /* SheetFromBarButton */ = {
+			isa = PBXGroup;
+			children = (
+				7A0000012F4A0001000A1111 /* SheetFromBarButtonViewController.swift */,
+			);
+			name = SheetFromBarButton;
 			sourceTree = "<group>";
 		};
 		D8EEAFFF2E4FE985001FE910 /* DefaultButtonGrouping */ = {
@@ -339,6 +350,7 @@
 				536E5AB920AC99A600DF859D /* CustomBackButtonViewController.swift in Sources */,
 				D8EEB0012E4FEC4C001FE910 /* DefaultButtonGroupingViewController.swift in Sources */,
 				D827512F2E57D787000D4FEB /* ToolbarSystemSearchViewController.swift in Sources */,
+				7A0000022F4A0001000A1111 /* SheetFromBarButtonViewController.swift in Sources */,
 				538A32691FB37AEC00CFDBDE /* NavigationPromptViewController.swift in Sources */,
 				538A32671FB37AD900CFDBDE /* CustomTitleViewController.swift in Sources */,
 			);
